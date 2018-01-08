@@ -8,9 +8,12 @@ public class Talent {
 	   private  String  level;
 	   private  String  specializationCourse;
 	   
-	   
-	   public Talent(String nameTalent, String fisrtNameTalent, int ageTalent, String levelTalent, String specializationCourseTalent) {
-		   
+	   /*constructor with 5parameters in the following order
+	    * nameTalent, firstNameTalent, ageTalent, levelTalent, specializationCoursetalent
+	    * initializes the attributes of the Talent class 
+	    */
+	   public Talent(String nameTalent, String fisrtNameTalent, int ageTalent, String levelTalent, String specializationCourseTalent) 
+	   {   
 		   name = nameTalent;
 		   fisrtName = fisrtNameTalent;
 		   age = ageTalent;
@@ -40,7 +43,7 @@ public class Talent {
 		    return specializationCourse;
 	      }
 	      
-	      
+	      //method that display identity of a Talent
 	      public String print() {
 	    	  return "A talent -> "+name+ "," +fisrtName+ "," +age+ "," +level+ "," +specializationCourse;
 	      }
